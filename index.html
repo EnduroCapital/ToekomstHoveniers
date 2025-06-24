@@ -24,99 +24,111 @@
         .text-subtle { color: #797979; }
         .focus\:ring-accent:focus { --tw-ring-color: #FBBF24; }
         
-        /* CORRECTIE: Verwijdering van position:absolute die de layout brak */
         .form-step {
             transition: opacity 0.3s ease-in-out;
-        }
-        .form-step.is-hidden {
-             /* De 'hidden' class van Tailwind (display:none) wordt nu gebruikt */
         }
     </style>
 </head>
 <body class="bg-white">
 
     <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold">
                 Toekomst<span class="brand-green">Hoveniers</span>
             </div>
+            <!-- Desktop Navigatie -->
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#kennisbank" class="text-subtle hover:brand-green transition">Kennisbank</a>
                 <a href="#over-ons" class="text-subtle hover:brand-green transition">Over Ons</a>
                 <a href="#contact" class="text-subtle hover:brand-green transition">Contact</a>
             </nav>
-            <a href="#download-rapport" class="bg-accent text-black font-semibold py-2 px-5 rounded-lg hover:bg-accent-dark transition-colors shadow">
+            <a href="#download-rapport" class="hidden md:block bg-accent text-black font-semibold py-2 px-5 rounded-lg hover:bg-accent-dark transition-colors shadow">
                 Download Rapport
             </a>
+            <!-- Mobiel Menu Knop -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobiel Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#kennisbank" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Kennisbank</a>
+            <a href="#over-ons" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Over Ons</a>
+            <a href="#contact" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+            <div class="p-4">
+                <a href="#download-rapport" class="block w-full text-center bg-accent text-black font-semibold py-2 px-5 rounded-lg hover:bg-accent-dark transition-colors shadow">
+                    Download Rapport
+                </a>
+            </div>
         </div>
     </header>
 
     <section class="hero-bg text-white">
-        <div class="container mx-auto px-6 py-24 md:py-40 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-white">De Toekomst van uw Hoveniersbedrijf</h1>
-            <p class="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8">Of u nu groei, bedrijfsopvolging of verkoop overweegt: navigeer de uitdagingen van de markt en ontsluit de ware potentie en waarde van uw hoveniersbedrijf.</p>
-            <a href="#download-rapport" class="bg-accent text-black font-bold py-4 px-10 rounded-lg hover:bg-accent-dark transition-colors text-xl shadow-2xl">
+        <div class="container mx-auto px-4 sm:px-6 py-20 md:py-32 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-white">De Toekomst van uw Hoveniersbedrijf</h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">Of u nu groei, bedrijfsopvolging of verkoop overweegt: navigeer de uitdagingen van de markt en ontsluit de ware potentie en waarde van uw hoveniersbedrijf.</p>
+            <!-- DEFINITIEVE CORRECTIE: Flexibele padding en tekstgrootte voor alle schermformaten -->
+            <a href="#download-rapport" class="inline-block bg-accent text-black font-bold py-3 px-5 text-base sm:py-3 sm:px-8 sm:text-lg md:py-4 md:px-10 rounded-lg hover:bg-accent-dark transition-colors shadow-2xl">
                 Start hier: Ontvang uw Benchmark Rapport
             </a>
         </div>
     </section>
 
-    <section class="bg-light py-4">
-        <div class="container mx-auto px-6">
-            <div class="flex justify-center items-center space-x-8 md:space-x-12 text-subtle">
-                <span class="font-semibold text-center hidden sm:block">Bekend met de standaarden van:</span>
-                <img src="vhg-logo.png" alt="VHG Logo" class="h-8 md:h-10 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" title="VHG">
-                <img src="Logo-Groenkeur.png" alt="Groenkeur Logo" class="h-8 md:h-10 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" title="Groenkeur">
-                <img src="NLGreenlabel.png" alt="NL Greenlabel Logo" class="h-8 md:h-10 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" title="NL Greenlabel">
+    <section class="bg-light py-6">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 md:gap-x-12 text-subtle">
+                <span class="font-semibold text-center text-sm md:text-base">Bekend met de standaarden van:</span>
+                <img src="vhg-logo.png" alt="VHG Logo" class="h-7 md:h-10 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" title="VHG">
+                <img src="Logo-Groenkeur.png" alt="Groenkeur Logo" class="h-7 md:h-10 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" title="Groenkeur">
+                <img src="NLGreenlabel.png" alt="NL Greenlabel Logo" class="h-7 md:h-10 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" title="NL Greenlabel">
             </div>
         </div>
     </section>
 
-    <section id="probleem" class="py-20 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-4">Herkent u de 'Winstgevendheidsvallei'?</h2>
-            <p class="text-lg text-subtle max-w-3xl mx-auto mb-12 leading-relaxed">
-                Analyse van de branche toont een pijnlijk patroon, met name voor de waarde van een hoveniersbedrijf bij verkoop of opvolging. Bedrijven met 4-10 FTE hebben het vaak het zwaarst. De overhead stijgt, maar de schaalvoordelen ontbreken nog. U bent meer manager en minder vakman, wat de winstgevendheid onder druk zet.
+    <section id="probleem" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Herkent u de 'Winstgevendheidsvallei'?</h2>
+            <p class="text-base md:text-lg text-subtle max-w-3xl mx-auto mb-12 leading-relaxed">
+                Analyse van de branche toont een pijnlijk patroon, met name voor de waarde van een hoveniersbedrijf bij verkoop of opvolging. Bedrijven met 4-10 FTE hebben het vaak het zwaarst. De overhead stijgt, maar de schaalvoordelen ontbreken nog.
             </p>
         </div>
     </section>
 
-    <!-- Download Sectie met Conversational Form -->
-    <section id="download-rapport" class="py-20 bg-light">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="pr-0 md:pr-8">
-                    <h2 class="text-4xl font-bold mb-4">Start het gesprek en ontvang uw Strategische Gids</h2>
-                    <p class="text-lg text-subtle mb-6 leading-relaxed">Ons "Benchmark Rapport 2025" is een strategische blauwdruk om de échte waarde van uw bedrijf te verhogen. Vul het formulier in en ontdek de belangrijkste inzichten.</p>
+    <section id="download-rapport" class="py-16 md:py-20 bg-light">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-center">
+                <div class="pr-0 lg:pr-8">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Start het gesprek en ontvang uw Strategische Gids</h2>
+                    <p class="text-base md:text-lg text-subtle mb-6 leading-relaxed">Ons "Benchmark Rapport 2025" is een strategische blauwdruk om de échte waarde van uw bedrijf te verhogen. Vul het formulier in en ontdek de belangrijkste inzichten.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-2xl border border-gray-200 p-8 overflow-hidden">
+                <div class="bg-white rounded-xl shadow-2xl border border-gray-200 p-6 sm:p-8 overflow-hidden">
                     <div id="form-container">
-                        <!-- Progress Bar -->
                         <div class="w-full bg-gray-200 rounded-full h-2 mb-8">
                             <div id="progress-bar" class="bg-accent h-2 rounded-full" style="width: 0%; transition: width 0.4s ease-in-out;"></div>
                         </div>
 
                         <form id="conversational-form" action="https://formspree.io/f/your_unique_id" method="POST">
                             <div id="form-content">
-                                <!-- Step 1: E-mail -->
                                 <div class="form-step" data-step="0">
-                                    <label for="email" class="block text-xl font-semibold text-gray-800">Op welk e-mailadres mogen we het rapport sturen?</label>
-                                    <input type="email" name="email" id="email" required placeholder="uw.email@voorbeeld.nl" class="mt-4 block w-full text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                    <label for="email" class="block text-lg sm:text-xl font-semibold text-gray-800">Op welk e-mailadres mogen we het rapport sturen?</label>
+                                    <input type="email" name="email" id="email" required placeholder="uw.email@voorbeeld.nl" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
                                 </div>
-                                <!-- Step 2: FTE -->
                                 <div class="form-step hidden" data-step="1">
-                                    <label for="fte" class="block text-xl font-semibold text-gray-800">Hoeveel FTE telt uw team (incl. uzelf)?</label>
-                                    <select id="fte" name="FTE" class="mt-4 block w-full text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                    <label for="fte" class="block text-lg sm:text-xl font-semibold text-gray-800">Hoeveel FTE telt uw team (incl. uzelf)?</label>
+                                    <select id="fte" name="FTE" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
                                         <option>1 - 3 FTE (Vooral zelfstandig)</option>
                                         <option>4 - 10 FTE (Groeiend team)</option>
                                         <option>11 - 20 FTE (Gevestigd MKB)</option>
                                         <option>> 20 FTE (Grote speler)</option>
                                     </select>
                                 </div>
-                                <!-- Step 3: Uitdaging -->
                                 <div class="form-step hidden" data-step="2">
-                                    <label for="uitdaging" class="block text-xl font-semibold text-gray-800">Wat is uw grootste zakelijke uitdaging?</label>
-                                    <select id="uitdaging" name="Grootste Uitdaging" class="mt-4 block w-full text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                    <label for="uitdaging" class="block text-lg sm:text-xl font-semibold text-gray-800">Wat is uw grootste zakelijke uitdaging?</label>
+                                    <select id="uitdaging" name="Grootste Uitdaging" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
                                         <option>Winstgevendheid en grip op cijfers</option>
                                         <option>Vinden en behouden van goed personeel</option>
                                         <option>Mijn eigen rol (te druk, te weinig tijd voor het vak)</option>
@@ -124,10 +136,9 @@
                                         <option>Anders</option>
                                     </select>
                                 </div>
-                                <!-- Step 4: Timing -->
                                 <div class="form-step hidden" data-step="3">
-                                    <label for="timing" class="block text-xl font-semibold text-gray-800">Binnen welke termijn overweegt u een serieuze verandering?</label>
-                                    <select id="timing" name="Timing Verandering" class="mt-4 block w-full text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                    <label for="timing" class="block text-lg sm:text-xl font-semibold text-gray-800">Binnen welke termijn overweegt u een serieuze verandering?</label>
+                                    <select id="timing" name="Timing Verandering" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
                                         <option>Binnen 1-2 jaar (actueel)</option>
                                         <option>Binnen 3-5 jaar (oriënterend)</option>
                                         <option>Nog niet concreet, maar ik sta er voor open</option>
@@ -135,32 +146,27 @@
                                     </select>
                                 </div>
                             </div>
-
-                            <!-- Navigation -->
-                            <div class="mt-8 pt-5 border-t border-gray-200 flex justify-end items-center">
+                             <div class="mt-8 pt-5 border-t border-gray-200 flex justify-end items-center">
                                 <button type="button" id="prev-btn" class="font-semibold text-gray-600 hover:text-black mr-4 hidden">Vorige</button>
                                 <button type="button" id="next-btn" class="bg-accent text-black font-bold py-2 px-6 rounded-lg hover:bg-accent-dark transition-colors text-lg shadow">Volgende</button>
                                 <button type="submit" id="submit-btn" class="bg-brand-green text-white font-bold py-2 px-6 rounded-lg hover:bg-brand-green-dark transition-colors text-lg shadow hidden">Verstuur en ontvang rapport</button>
                             </div>
                         </form>
                     </div>
-
-                    <!-- Success Message -->
-                    <div id="success-message" class="hidden text-center py-10">
+                     <div id="success-message" class="hidden text-center py-10">
                          <svg class="w-16 h-16 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         <h3 class="text-2xl font-bold mb-2">Dank u wel!</h3>
                         <p class="text-subtle">Het rapport is onderweg naar uw inbox. We nemen mogelijk contact op om te horen of het waardevol was.</p>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="kennisbank" class="py-20 bg-white">
-         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Diepgaande Inzichten uit onze Kennisbank</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+    <section id="kennisbank" class="py-16 md:py-20 bg-white">
+         <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Diepgaande Inzichten uit onze Kennisbank</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-light rounded-lg shadow-lg overflow-hidden p-6 border-2 border-accent hover:shadow-xl transition-shadow scale-105">
                     <h3 class="text-xl font-bold mb-3">De Winstgevendheidsvallei</h3>
                     <p class="text-subtle mb-4 leading-relaxed">Waarom hoveniers met 4-10 FTE het zwaarst hebben (en hoe u ontsnapt).</p>
@@ -179,13 +185,10 @@
             </div>
         </div>
     </section>
-
-    <section id="over-ons" class="py-20 bg-light">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Wij zijn geen traditionele investeerders</h2>
-            <p class="text-lg text-subtle max-w-3xl mx-auto mb-12 text-center leading-relaxed">
-                Enduro Capital is opgericht door ondernemers met een missie. Wij nemen zelf de leiding om, samen met u en uw team, het bedrijf uit te bouwen voor de lange termijn.
-            </p>
+    
+    <section id="over-ons" class="py-16 md:py-20 bg-light">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Wij zijn geen traditionele investeerders</h2>
             <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                     <img src="https://placehold.co/150x150/e0f2f1/106943?text=MD" alt="Foto van Martijn de Blaey" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200">
@@ -202,13 +205,12 @@
             </div>
         </div>
     </section>
-
+    
     <footer id="contact" class="bg-black text-white">
-        <div class="container mx-auto px-6 py-12 text-center">
+        <div class="container mx-auto px-4 sm:px-6 py-12 text-center">
             <h2 class="text-3xl font-bold mb-4 text-white">Klaar voor de volgende stap?</h2>
-            <p class="max-w-xl mx-auto mb-8 text-gray-300">Of u nu wilt sparren over het rapport of vrijblijvend uw toekomstplannen wilt bespreken, wij horen graag van u.</p>
             <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-                 <a href="#" class="bg-accent text-black font-bold py-3 px-8 rounded-lg hover:bg-accent-dark transition-colors text-lg shadow-lg">
+                <a href="#" class="bg-accent text-black font-bold py-3 px-8 rounded-lg hover:bg-accent-dark transition-colors text-lg shadow-lg">
                     Plan een Vertrouwelijk Gesprek
                 </a>
                 <a href="mailto:contact@endurocapital.nl" class="font-semibold text-lg text-gray-300 hover:text-white transition">
@@ -222,10 +224,19 @@
         </div>
     </footer>
 
-
     <script>
+    // Script voor mobiel menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Script voor formulier
     document.addEventListener('DOMContentLoaded', function() {
         const form = document.getElementById('conversational-form');
+        if (!form) return;
+        
         const steps = Array.from(form.querySelectorAll('.form-step'));
         const nextBtn = document.getElementById('next-btn');
         const prevBtn = document.getElementById('prev-btn');
@@ -237,27 +248,20 @@
         let currentStep = 0;
 
         function updateFormSteps() {
-            // Update progress bar
-            // Start progress vanaf de tweede stap om de eerste vraag als 0% te zien
-            const progress = (currentStep / (steps.length -1) ) * 100;
+            const progress = (currentStep / (steps.length - 1)) * 100;
             progressBar.style.width = `${progress}%`;
-
-            // Show/hide steps
             steps.forEach((step, index) => {
                 step.classList.toggle('hidden', index !== currentStep);
             });
-
-            // Update buttons
             prevBtn.classList.toggle('hidden', currentStep === 0);
             nextBtn.classList.toggle('hidden', currentStep === steps.length - 1);
             submitBtn.classList.toggle('hidden', currentStep !== steps.length - 1);
         }
 
         nextBtn.addEventListener('click', () => {
-            // Simple validation for current step
             const currentInput = steps[currentStep].querySelector('input, select');
             if (currentInput.checkValidity()) {
-                 if (currentStep < steps.length - 1) {
+                if (currentStep < steps.length - 1) {
                     currentStep++;
                     updateFormSteps();
                 }
@@ -276,17 +280,13 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             const formData = new FormData(form);
-            
-            // Show loading state
             submitBtn.textContent = 'Verzenden...';
             submitBtn.disabled = true;
 
             fetch(form.action, {
                 method: 'POST',
                 body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
+                headers: {'Accept': 'application/json'}
             }).then(response => {
                 if (response.ok) {
                     formContainer.classList.add('hidden');
@@ -301,19 +301,17 @@
                     }).catch(() => {
                         alert('Er is een onbekende fout opgetreden bij het verwerken van de respons.');
                     });
-                    // Reset button
                     submitBtn.textContent = 'Verstuur en ontvang rapport';
                     submitBtn.disabled = false;
                 }
             }).catch(error => {
                 alert('Er is een fout opgetreden bij het verzenden. Controleer uw internetverbinding.');
-                // Reset button
                 submitBtn.textContent = 'Verstuur en ontvang rapport';
                 submitBtn.disabled = false;
             });
         });
 
-        updateFormSteps(); // Initial setup
+        updateFormSteps();
     });
     </script>
 </body>

@@ -14,7 +14,7 @@
         /* Kleurenpalet & Typografie */
         body { font-family: 'Inter', sans-serif; color: #000000; }
         h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; font-weight: 700; color: #000000; }
-        .hero-bg { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('tuin-ontwerpen.webp'); background-size: cover; background-position: center; }
+        .hero-bg { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(`tuin-ontwerpen.webp'); background-size: cover; background-position: center; }
         .brand-green { color: #106943; }
         .bg-brand-green { background-color: #106943; }
         .hover\:bg-brand-green-dark:hover { background-color: #0d5a37; }
@@ -90,195 +90,237 @@
     </section>
 
     <!-- Probleem / Pijnpunten Sectie -->
-    <section id="herkent-u-dit" class="py-16 md:py-20 bg-white">
+    <section id="herkent-u-dit" class="py-16 md:py-24 bg-light">
         <div class="container mx-auto px-4 sm:px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Herkent u dit als ondernemer?</h2>
-            <p class="text-base md:text-lg text-subtle max-w-3xl mx-auto mb-12 leading-relaxed text-center">U heeft met passie gebouwd aan een prachtig bedrijf, maar loopt tegen de volgende fase aan. Wij begrijpen de uitdagingen van de moderne hovenier.</p>
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">U bent een vakman, maar het ondernemerschap slokt u op.</h2>
+                <p class="text-lg text-subtle leading-relaxed mb-12">U heeft met passie een prachtig bedrijf gebouwd, maar u herkent de groeiende spanning tussen uw liefde voor het vak en de toenemende lasten van het ondernemerschap. Wij begrijpen die spagaat.</p>
+            </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-light p-6 rounded-lg border border-gray-200">
+                <div class="bg-white p-8 rounded-xl border border-gray-200 card-hover">
                     <h3 class="text-xl font-bold mb-3">De Opvolgingspuzzel</h3>
-                    <p class="text-subtle leading-relaxed">Uw pensioen nadert, maar er is geen opvolger binnen de familie of het bedrijf. U zoekt naar een oplossing die de continuïteit waarborgt.</p>
+                    <p class="text-subtle leading-relaxed">Uw pensioen nadert, maar een geschikte opvolger is niet in zicht. U zoekt een partij die de continuïteit waarborgt en uw bedrijf met dezelfde passie voortzet.</p>
                 </div>
-                <div class="bg-light p-6 rounded-lg border border-gray-200">
+                <div class="bg-white p-8 rounded-xl border-2 border-accent card-hover">
                     <h3 class="text-xl font-bold mb-3">De Winstgevendheidsvallei</h3>
-                    <p class="text-subtle leading-relaxed">Uw bedrijf groeit, maar de overhead stijgt sneller. U bent meer tijd kwijt aan administratie en HR dan aan het vak zelf, wat de winst onder druk zet.</p>
+                    <p class="text-subtle leading-relaxed">Uw bedrijf groeit, maar de overhead stijgt sneller. U bent meer tijd kwijt aan administratie, planning en HR dan aan het adviseren van klanten en het aansturen van projecten.</p>
                 </div>
-                <div class="bg-light p-6 rounded-lg border border-gray-200">
+                <div class="bg-white p-8 rounded-xl border border-gray-200 card-hover">
                     <h3 class="text-xl font-bold mb-3">Zorg voor het Personeel</h3>
-                    <p class="text-subtle leading-relaxed">Uw team is uw kapitaal. U wilt zeker weten dat zij in een stabiele en ambitieuze omgeving terechtkomen waar ze zich verder kunnen ontwikkelen.</p>
+                    <p class="text-subtle leading-relaxed">Uw team is uw kapitaal. U wilt zeker weten dat uw mensen in een stabiele, ambitieuze omgeving terechtkomen waar ze zich verder kunnen ontwikkelen en hun vakmanschap wordt gewaardeerd.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="download-rapport" class="py-16 md:py-20 bg-light">
+ <!-- Formulier Sectie -->
+    <section id="download-rapport" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6">
-            <div class="grid lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-center">
+            <div class="grid lg:grid-cols-2 gap-y-12 lg:gap-x-20 items-center">
                 <div class="pr-0 lg:pr-8">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Start het gesprek en ontvang uw Strategische Gids</h2>
-                  <p class="text-base md:text-lg text-subtle mb-6 leading-relaxed">Ons "Benchmark Rapport 2025" is een strategische gids gebaseerd op een diepgaande analyse van de hoveniersbranche. Ontdek hoe u de échte waarde van uw bedrijf verhoogt en welke kansen er liggen op het gebied van digitalisering en verduurzaming. Vul het formulier in voor directe toegang.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-5">Ontvang de Blauwdruk voor Waardecreatie</h2>
+                    <p class="text-lg text-subtle mb-6 leading-relaxed">Ons "Benchmark Rapport 2025" is een strategische gids, gebaseerd op een diepgaande analyse van meer dan 1.200 hoveniersbedrijven. Ontdek hoe u de échte waarde van uw bedrijf verhoogt en welke kansen er liggen op het gebied van digitalisering, duurzaamheid en personeelsbeleid. Vul het formulier in voor directe, vertrouwelijke toegang.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-2xl border border-gray-200 p-6 sm:p-8 overflow-hidden">
+                <div class="bg-light rounded-xl shadow-lg border border-gray-200 p-6 sm:p-10">
                     <div id="form-container">
-                        <div class="w-full bg-gray-200 rounded-full h-2 mb-8">
-                            <div id="progress-bar" class="bg-accent h-2 rounded-full" style="width: 0%; transition: width 0.4s ease-in-out;"></div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-8">
+                            <div id="progress-bar" class="bg-accent h-2.5 rounded-full" style="width: 0%; transition: width 0.4s ease-in-out;"></div>
                         </div>
 
                         <form id="conversational-form" action="https://formspree.io/f/your_unique_id" method="POST">
                             <div id="form-content">
+                                <!-- Stap 1: Contact info -->
                                 <div class="form-step" data-step="0">
-                                    <label for="email" class="block text-lg sm:text-xl font-semibold text-gray-800">Op welk e-mailadres mogen we het rapport sturen?</label>
-                                    <input type="email" name="email" id="email" required placeholder="uw.email@voorbeeld.nl" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                    <label for="name" class="block text-xl font-semibold text-gray-800">Laten we beginnen, wat is uw naam?</label>
+                                    <input type="text" name="naam" id="name" required placeholder="Uw voor- en achternaam" class="mt-4 block w-full text-lg px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                                    <label for="email" class="mt-4 block text-xl font-semibold text-gray-800">Op welk e-mailadres mogen we het rapport sturen?</label>
+                                    <input type="email" name="email" id="email" required placeholder="uw.email@voorbeeld.nl" class="mt-4 block w-full text-lg px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
                                 </div>
+                                <!-- Stap 2: Bedrijfsgrootte -->
                                 <div class="form-step hidden" data-step="1">
-                                    <label for="fte" class="block text-lg sm:text-xl font-semibold text-gray-800">Hoeveel FTE telt uw team (incl. uzelf)?</label>
-                                    <select id="fte" name="FTE" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
-                                        <option>1 - 3 FTE (Vooral zelfstandig)</option>
-                                        <option>4 - 10 FTE (Groeiend team)</option>
-                                        <option>11 - 20 FTE (Gevestigd MKB)</option>
-                                        <option>> 20 FTE (Grote speler)</option>
+                                    <label for="omzet" class="block text-xl font-semibold text-gray-800">Wat is de geschatte jaaromzet van uw bedrijf?</label>
+                                    <select id="omzet" name="Jaaromzet" class="mt-4 block w-full text-lg px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                                        <option>&lt; €1,5 miljoen</option>
+                                        <option>€1,5 - €3 miljoen</option>
+                                        <option>€3 - €5 miljoen</option>
+                                        <option>&gt; €5 miljoen</option>
+                                    </select>
+                                    <label for="fte" class="mt-6 block text-xl font-semibold text-gray-800">En hoeveel FTE telt uw team (incl. uzelf)?</label>
+                                    <select id="fte" name="FTE" class="mt-4 block w-full text-lg px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                                        <option>1 - 3 FTE</option>
+                                        <option>4 - 10 FTE</option>
+                                        <option>11 - 20 FTE</option>
+                                        <option>&gt; 20 FTE</option>
                                     </select>
                                 </div>
+                                <!-- Stap 3: Intentie -->
                                 <div class="form-step hidden" data-step="2">
-                                    <label for="uitdaging" class="block text-lg sm:text-xl font-semibold text-gray-800">Wat is uw grootste zakelijke uitdaging?</label>
-                                    <select id="uitdaging" name="Grootste Uitdaging" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
-                                        <option>Winstgevendheid en grip op cijfers</option>
-                                        <option>Vinden en behouden van goed personeel</option>
-                                        <option>Mijn eigen rol (te druk, te weinig tijd voor het vak)</option>
-                                        <option>De volgende stap: groei, opvolging of verkoop</option>
-                                        <option>Anders</option>
+                                    <label for="intentie" class="block text-xl font-semibold text-gray-800">Wat is de voornaamste reden van uw interesse?</label>
+                                    <select id="intentie" name="Intentie" class="mt-4 block w-full text-lg px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                                        <option>Ik wil mijn bedrijf verkopen (binnen 3 jaar)</option>
+                                        <option>Ik oriënteer me op verkoop (lange termijn)</option>
+                                        <option>Ik zoek een partner voor verdere groei</option>
+                                        <option>Ik ben vooral geïnteresseerd in het rapport</option>
                                     </select>
                                 </div>
+                                 <!-- Stap 4: Telefoon -->
                                 <div class="form-step hidden" data-step="3">
-                                    <label for="timing" class="block text-lg sm:text-xl font-semibold text-gray-800">Binnen welke termijn overweegt u een serieuze verandering?</label>
-                                    <select id="timing" name="Timing Verandering" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
-                                        <option>Binnen 1-2 jaar (actueel)</option>
-                                        <option>Binnen 3-5 jaar (oriënterend)</option>
-                                        <option>Nog niet concreet, maar ik sta er voor open</option>
-                                        <option>Ik focus op autonome groei</option>
-                                    </select>
+                                    <label for="telefoon" class="block text-xl font-semibold text-gray-800">Dank u. Mogen we u bellen voor een korte, vrijblijvende toelichting?</label>
+                                    <input type="tel" name="telefoon" id="telefoon" placeholder="Optioneel: uw 06-nummer" class="mt-4 block w-full text-lg px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent">
+                                    <p class="text-sm text-subtle mt-2">We gebruiken dit enkel voor een eenmalige, vertrouwelijke opvolging na het versturen van het rapport.</p>
                                 </div>
                             </div>
-                             <div class="mt-8 pt-5 border-t border-gray-200 flex justify-end items-center">
-                                <button type="button" id="prev-btn" class="font-semibold text-gray-600 hover:text-black mr-4 hidden">Vorige</button>
-                                <button type="button" id="next-btn" class="bg-accent text-black font-bold py-2 px-6 rounded-lg hover:bg-accent-dark transition-colors text-lg shadow">Volgende</button>
-                                <button type="submit" id="submit-btn" class="bg-brand-green text-white font-bold py-2 px-6 rounded-lg hover:bg-brand-green-dark transition-colors text-lg shadow hidden">Verstuur en ontvang rapport</button>
+                             <div class="mt-8 pt-6 border-t border-gray-200 flex justify-between items-center">
+                                <button type="button" id="prev-btn" class="font-semibold text-gray-600 hover:text-black hidden">Vorige</button>
+                                <button type="button" id="next-btn" class="bg-accent text-white font-bold py-3 px-8 rounded-lg hover:bg-accent-dark transition-colors text-lg shadow ml-auto">Volgende</button>
+                                <button type="submit" id="submit-btn" class="bg-brand-green text-white font-bold py-3 px-8 rounded-lg hover:bg-brand-green-dark transition-colors text-lg shadow ml-auto hidden">Verstuur en Ontvang Rapport</button>
                             </div>
                         </form>
                     </div>
                      <div id="success-message" class="hidden text-center py-10">
-                         <svg class="w-16 h-16 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <h3 class="text-2xl font-bold mb-2">Dank u wel!</h3>
-                        <p class="text-subtle">Het rapport is onderweg naar uw inbox. We nemen mogelijk contact op om te horen of het waardevol was.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- Proces Sectie -->
-    <section id="proces" class="py-16 md:py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Ons Proces: Transparant en Zonder Verrassingen</h2>
-            <p class="text-base md:text-lg text-subtle max-w-3xl mx-auto mb-12 leading-relaxed text-center">Een bedrijfsoverdracht is een grote stap. Wij begeleiden u door een helder en respectvol proces, van de eerste kennismaking tot de definitieve handtekening.</p>
-            <div class="relative max-w-4xl mx-auto">
-                <!-- Lijn -->
-                <div class="hidden md:block absolute top-5 left-1/2 w-0.5 h-[calc(100%-2.5rem)] bg-gray-300"></div>
-                <!-- Stappen -->
-                <div class="grid md:grid-cols-1 gap-16">
-                    <!-- Stap 1 -->
-                    <div class="flex flex-col md:flex-row items-center gap-8">
-                        <div class="bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl flex-shrink-0 z-10">1</div>
-                        <div class="bg-light p-6 rounded-lg border border-gray-200 w-full">
-                            <h3 class="text-xl font-bold mb-2">Vrijblijvende Kennismaking</h3>
-                            <p class="text-subtle">Alles begint met een vertrouwelijk gesprek. We luisteren naar uw verhaal, uw wensen en uw ambities voor het bedrijf. Dit is puur om te zien of er een persoonlijke en zakelijke klik is.</p>
-                        </div>
-                    </div>
-                     <!-- Stap 2 -->
-                    <div class="flex flex-col md:flex-row items-center gap-8">
-                        <div class="bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl flex-shrink-0 z-10">2</div>
-                        <div class="bg-light p-6 rounded-lg border border-gray-200 w-full">
-                            <h3 class="text-xl font-bold mb-2">Gezamenlijke Analyse</h3>
-                            <p class="text-subtle">Als de klik er is, duiken we samen in de potentie. We analyseren de cijfers, de operatie en de groeikansen, altijd in volledige transparantie en in samenwerking met u.</p>
-                        </div>
-                    </div>
-                     <!-- Stap 3 -->
-                    <div class="flex flex-col md:flex-row items-center gap-8">
-                        <div class="bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl flex-shrink-0 z-10">3</div>
-                        <div class="bg-light p-6 rounded-lg border border-gray-200 w-full">
-                            <h3 class="text-xl font-bold mb-2">Eerlijk en Helder Voorstel</h3>
-                            <p class="text-subtle">Op basis van de analyse doen we een concreet en eerlijk voorstel. We leggen duidelijk uit hoe de waardering is opgebouwd en welke structuur we voor ogen hebben.</p>
-                        </div>
-                    </div>
-                     <!-- Stap 4 -->
-                    <div class="flex flex-col md:flex-row items-center gap-8">
-                        <div class="bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl flex-shrink-0 z-10">4</div>
-                        <div class="bg-light p-6 rounded-lg border border-gray-200 w-full">
-                            <h3 class="text-xl font-bold mb-2">'Warme' Overdracht</h3>
-                            <p class="text-subtle">Na akkoord plannen we een zorgvuldige overdrachtsperiode. Uw rol staat hierin centraal om de continuïteit voor klanten en personeel te waarborgen. Wij nemen het stokje pas volledig over als iedereen er klaar voor is.</p>
-                        </div>
+                         <svg class="w-20 h-20 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-3xl font-bold mb-2">Dank u wel!</h3>
+                        <p class="text-subtle text-lg">Het rapport is onderweg naar uw inbox. We nemen binnenkort contact op om te horen of het waardevol was.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
- 
-    
-    <section id="over-ons" class="py-16 md:py-20 bg-light">
-        <div class="container mx-auto px-4 sm:px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Wij zijn geen traditionele investeerders</h2>
-            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://placehold.co/150x150/e0f2f1/106943?text=MD" alt="Foto van Martijn de Blaey" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200">
-                    <h3 class="text-2xl font-bold">Martijn de Blaey</h3>
-                    <p class="font-semibold brand-green mb-2">Commercie & Strategie</p>
-                    <p class="text-subtle leading-relaxed">Martijn implementeert het **Commercie & Strategie Playbook**, gericht op het verhogen van de winstgevendheid per project en het bouwen van een voorspelbare, contractuele omzetstroom.</p>
+  <!-- Proces Sectie -->
+        <section id="proces" class="py-16 md:py-24 bg-light">
+            <div class="container mx-auto px-4 sm:px-6">
+                 <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ons Proces: Transparant en Zonder Verrassingen</h2>
+                    <p class="text-lg text-subtle leading-relaxed mb-16">Een bedrijfsoverdracht is een grote stap. Wij begeleiden u door een helder en respectvol proces, van de eerste kennismaking tot de definitieve handtekening.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://placehold.co/150x150/e0f2f1/106943?text=EW" alt="Foto van Ebel Weelinck" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200">
+                <div class="relative max-w-5xl mx-auto">
+                    <!-- Lijn -->
+                    <div class="hidden md:block absolute top-6 left-1/2 w-0.5 h-[calc(100%-3rem)] bg-gray-200 -translate-x-1/2"></div>
+                    <!-- Stappen -->
+                    <div class="grid md:grid-cols-1 gap-12">
+                        <!-- Stap 1 -->
+                        <div class="md:grid grid-cols-2 items-center gap-12">
+                            <div class="text-right pr-12 hidden md:block">
+                                 <h3 class="text-2xl font-bold mb-2">Vrijblijvende Kennismaking</h3>
+                                <p class="text-subtle">Alles begint met een vertrouwelijk gesprek. We luisteren naar uw verhaal, uw wensen en uw ambities voor het bedrijf. Dit is puur om te zien of er een persoonlijke en zakelijke klik is.</p>
+                            </div>
+                            <div class="relative">
+                                 <div class="absolute -left-6 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl flex-shrink-0 z-10">1</div>
+                                 <div class="md:hidden bg-white p-6 rounded-lg border border-gray-200 w-full mb-4"><h3 class="text-xl font-bold">Vrijblijvende Kennismaking</h3></div>
+                                 <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop" class="rounded-lg shadow-md w-full" alt="Twee zakenmensen schudden de hand in een kantoor.">
+                            </div>
+                            <div class="text-left pl-12 hidden md:block"></div>
+                        </div>
+                         <!-- Stap 2 -->
+                         <div class="md:grid grid-cols-2 items-center gap-12">
+                             <div></div>
+                            <div class="text-left pl-12 hidden md:block">
+                                 <h3 class="text-2xl font-bold mb-2">Gezamenlijke Analyse</h3>
+                                <p class="text-subtle">Als de klik er is, duiken we samen de potentie in. We analyseren de cijfers, de operatie en de groeikansen, altijd in volledige transparantie en samenwerking met u.</p>
+                            </div>
+                            <div class="relative">
+                                 <div class="absolute -left-6 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl flex-shrink-0 z-10">2</div>
+                                 <div class="md:hidden bg-white p-6 rounded-lg border border-gray-200 w-full mb-4"><h3 class="text-xl font-bold">Gezamenlijke Analyse</h3></div>
+                                 <img src="https://images.unsplash.com/photo-1556742044-53c8d5d1e1da?q=80&w=2070&auto=format&fit=crop" class="rounded-lg shadow-md w-full" alt="Team dat samenwerkt rond een tafel met grafieken en laptops.">
+                            </div>
+                        </div>
+                         <!-- Stap 3 -->
+                        <div class="md:grid grid-cols-2 items-center gap-12">
+                            <div class="text-right pr-12 hidden md:block">
+                                 <h3 class="text-2xl font-bold mb-2">Eerlijk en Helder Voorstel</h3>
+                                <p class="text-subtle">Op basis van de analyse doen we een concreet en eerlijk voorstel. We leggen duidelijk uit hoe de waardering is opgebouwd en welke structuur we voor ogen hebben voor de overname.</p>
+                            </div>
+                            <div class="relative">
+                                 <div class="absolute -left-6 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl flex-shrink-0 z-10">3</div>
+                                 <div class="md:hidden bg-white p-6 rounded-lg border border-gray-200 w-full mb-4"><h3 class="text-xl font-bold">Eerlijk en Helder Voorstel</h3></div>
+                                 <img src="https://images.unsplash.com/photo-1586473215904-19358a9937b8?q=80&w=2070&auto=format&fit=crop" class="rounded-lg shadow-md w-full" alt="Document met een pen erop, symboliseert een voorstel.">
+                            </div>
+                        </div>
+                         <!-- Stap 4 -->
+                         <div class="md:grid grid-cols-2 items-center gap-12">
+                             <div></div>
+                            <div class="text-left pl-12 hidden md:block">
+                                 <h3 class="text-2xl font-bold mb-2">'Warme' Overdracht</h3>
+                                <p class="text-subtle">Na akkoord plannen we een zorgvuldige overdrachtsperiode. Uw rol staat hierin centraal om de continuïteit voor klanten en personeel te waarborgen. Wij nemen het stokje pas volledig over als iedereen er klaar voor is.</p>
+                            </div>
+                            <div class="relative">
+                                 <div class="absolute -left-6 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl flex-shrink-0 z-10">4</div>
+                                <div class="md:hidden bg-white p-6 rounded-lg border border-gray-200 w-full mb-4"><h3 class="text-xl font-bold">'Warme' Overdracht</h3></div>
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" class="rounded-lg shadow-md w-full" alt="Een ervaren persoon draagt kennis over aan een jonger persoon aan een bureau.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    <!-- Over Ons Sectie -->
+    <section id="over-ons" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-3xl mx-auto">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Wij zijn de nieuwe directie</h2>
+                 <p class="text-lg text-subtle leading-relaxed mb-12">Wij zijn geen traditionele investeerders die op afstand blijven. Na een overname stappen wij zelf fulltime in het bedrijf als de nieuwe, hands-on directie om samen met uw team de groei te realiseren.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="bg-light p-8 rounded-xl text-center border border-gray-200">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQEO80ylHsoPqg/profile-displayphoto-shrink_800_800/0/1684496791698?e=1724889600&v=beta&t=U3v4V3hQyE3R-L3e4J5RzY4o2C8k7h3w9S5j0gP7T9s" alt="Foto van Martijn de Blaey" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md">
+                    <h3 class="text-2xl font-bold">Martijn de Blaey</h3>
+                    <p class="font-semibold brand-green mb-3 text-lg">Financiën & Strategie</p>
+                    <p class="text-subtle leading-relaxed">Met een achtergrond in private equity en als (interim) CFO implementeert Martijn het **Financieel & Strategisch Playbook**. Hij focust op het verhogen van de winstgevendheid per project en het bouwen van een voorspelbare, contractuele omzetstroom voor stabiele groei.</p>
+                </div>
+                <div class="bg-light p-8 rounded-xl text-center border border-gray-200">
+                    <img src="https://media.licdn.com/dms/image/C4E03AQE7_1b59Bq2Yw/profile-displayphoto-shrink_800_800/0/1654876807914?e=1724889600&v=beta&t=7b2hYF6yX0bV7W-d4J3r8g6J6b8V6F8q8T7c6zC4Q3c" alt="Foto van Ebel Weelinck" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md">
                     <h3 class="text-2xl font-bold">Ebel Weelinck</h3>
-                    <p class="font-semibold brand-green mb-2">Data & Technologie</p>
-                    <p class="text-subtle leading-relaxed">Ebel implementeert het **Data & Technologie Playbook**, waarmee hij operationele processen digitaliseert, de efficiëntie verhoogt en een schaalbaar bedrijf bouwt voor de toekomst.</p>
+                    <p class="font-semibold brand-green mb-3 text-lg">Data & Technologie</p>
+                    <p class="text-subtle leading-relaxed">Als ervaren data-consultant en ingenieur implementeert Ebel het **Data & Technologie Playbook**. Hiermee digitaliseert hij operationele processen, verhoogt de efficiëntie in het veld en bouwt hij een schaalbaar bedrijf voor de toekomst.</p>
                 </div>
             </div>
         </div>
     </section>
-       <section id="kennisbank" class="py-16 md:py-20 bg-white">
+       
+    <!-- Kennisbank -->
+    <section id="kennisbank" class="py-16 md:py-24 bg-light">
          <div class="container mx-auto px-4 sm:px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Diepgaande Inzichten uit onze Kennisbank</h2>
+             <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Diepgaande Inzichten uit onze Kennisbank</h2>
+                <p class="text-lg text-subtle leading-relaxed mb-12">Onze strategie is gebaseerd op data en diepgaande kennis van de branche. Lees onze analyses over de belangrijkste trends en kansen.</p>
+            </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-light rounded-lg shadow-lg overflow-hidden p-6 border-2 border-accent hover:shadow-xl transition-shadow scale-105">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden p-8 border border-gray-200 card-hover">
                     <h3 class="text-xl font-bold mb-3">De Winstgevendheidsvallei</h3>
-                    <p class="text-subtle mb-4 leading-relaxed">Waarom hoveniers met 4-10 FTE het zwaarst hebben (en hoe u ontsnapt).</p>
-                    <a href="artikel-winstgevendheidsvallei.html" class="font-semibold brand-green hover:underline">Lees de volledige analyse &rarr;</a>
+                    <p class="text-subtle mb-4 leading-relaxed">Waarom hoveniers met 4-10 FTE het operationeel zwaarst hebben (en hoe u ontsnapt).</p>
+                    <a href="#" class="font-semibold brand-green hover:underline">Lees de volledige analyse &rarr;</a>
                 </div>
-                <div class="bg-light rounded-lg shadow-md overflow-hidden p-6 border border-gray-200 hover:shadow-xl transition-shadow">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden p-8 border border-gray-200 card-hover">
                     <h3 class="text-xl font-bold mb-3">De 'Groene Imperatief'</h3>
-                    <p class="text-subtle mb-4 leading-relaxed">Hoe klimaatverandering de grootste commerciële kans voor uw bedrijf wordt.</p>
+                    <p class="text-subtle mb-4 leading-relaxed">Hoe klimaatadaptatie en biodiversiteit de grootste commerciële kansen voor uw bedrijf worden.</p>
                     <a href="#" class="font-semibold brand-green hover:underline">Ontdek de kansen &rarr;</a>
                 </div>
-                <div class="bg-light rounded-lg shadow-md overflow-hidden p-6 border border-gray-200 hover:shadow-xl transition-shadow">
-                    <h3 class="text-xl font-bold mb-3">Consolidatie in de Branche</h3>
-                    <p class="text-subtle mb-4 leading-relaxed">Waarom nu het moment is om uw strategische opties te overwegen.</p>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden p-8 border border-gray-200 card-hover">
+                    <h3 class="text-xl font-bold mb-3">Waardering & Consolidatie</h3>
+                    <p class="text-subtle mb-4 leading-relaxed">Wat is uw bedrijf écht waard in een consoliderende markt? Een blik op de multiples en trends.</p>
                     <a href="#" class="font-semibold brand-green hover:underline">Verken uw opties &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
-    <footer id="contact" class="bg-black text-white">
-        <div class="container mx-auto px-4 sm:px-6 py-12 text-center">
-            <h2 class="text-3xl font-bold mb-4 text-white">Klaar voor de volgende stap?</h2>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 sm:px-6 py-16 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-white">Klaar voor een vertrouwelijk gesprek?</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-8">Laten we de mogelijkheden voor uw bedrijf bespreken. Plan direct een gesprek in of stuur ons een e-mail.</p>
             <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-                <a href="#" class="bg-accent text-black font-bold py-3 px-8 rounded-lg hover:bg-accent-dark transition-colors text-lg shadow-lg">
+                <a href="mailto:contact@endurocapital.nl?subject=Vertrouwelijk%20gesprek%20Toekomst%20Hoveniers" class="bg-accent text-white font-bold py-3 px-8 rounded-lg hover:bg-accent-dark transition-colors text-lg shadow-lg">
                     Plan een Vertrouwelijk Gesprek
                 </a>
                 <a href="mailto:contact@endurocapital.nl" class="font-semibold text-lg text-gray-300 hover:text-white transition">
                     Of stuur ons een e-mail
                 </a>
             </div>
-            <div class="mt-12 border-t border-gray-700 pt-8 text-sm text-gray-400">
+            <div class="mt-16 border-t border-gray-700 pt-8 text-sm text-gray-400">
                 <p>&copy; 2025 ToekomstHoveniers.nl - Een initiatief van Enduro Capital.</p>
-                <p class="mt-2">Alle gesprekken zijn strikt vertrouwelijk.</p>
+                <p class="mt-2">Alle gesprekken en verstrekte informatie worden strikt vertrouwelijk behandeld.</p>
             </div>
         </div>
     </footer>
@@ -291,7 +333,7 @@
         mobileMenu.classList.toggle('hidden');
     });
 
-    // Script voor formulier
+    // Script voor conversatie formulier
     document.addEventListener('DOMContentLoaded', function() {
         const form = document.getElementById('conversational-form');
         if (!form) return;
@@ -309,23 +351,37 @@
         function updateFormSteps() {
             const progress = (currentStep / (steps.length - 1)) * 100;
             progressBar.style.width = `${progress}%`;
+            
             steps.forEach((step, index) => {
-                step.classList.toggle('hidden', index !== currentStep);
+                const isCurrent = index === currentStep;
+                step.classList.toggle('hidden', !isCurrent);
+                // We'll manage active class for animations if needed, but hidden is enough for functionality
             });
+
             prevBtn.classList.toggle('hidden', currentStep === 0);
             nextBtn.classList.toggle('hidden', currentStep === steps.length - 1);
             submitBtn.classList.toggle('hidden', currentStep !== steps.length - 1);
         }
 
+        function validateStep(stepIndex) {
+            const currentInputs = steps[stepIndex].querySelectorAll('input[required], select[required]');
+            let allValid = true;
+            currentInputs.forEach(input => {
+                if (!input.checkValidity()) {
+                    // Modern browsers will show a validation popup
+                    input.reportValidity();
+                    allValid = false;
+                }
+            });
+            return allValid;
+        }
+
         nextBtn.addEventListener('click', () => {
-            const currentInput = steps[currentStep].querySelector('input, select');
-            if (currentInput.checkValidity()) {
+            if (validateStep(currentStep)) {
                 if (currentStep < steps.length - 1) {
                     currentStep++;
                     updateFormSteps();
                 }
-            } else {
-                currentInput.reportValidity();
             }
         });
 
@@ -338,6 +394,8 @@
         
         form.addEventListener('submit', function(e) {
             e.preventDefault();
+            if (!validateStep(currentStep)) return;
+
             const formData = new FormData(form);
             submitBtn.textContent = 'Verzenden...';
             submitBtn.disabled = true;
@@ -352,25 +410,18 @@
                     successMessage.classList.remove('hidden');
                 } else {
                     response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            alert(data["errors"].map(error => error["message"]).join(", "));
-                        } else {
-                            alert('Er is een onbekende fout opgetreden.');
-                        }
-                    }).catch(() => {
-                        alert('Er is een onbekende fout opgetreden bij het verwerken van de respons.');
+                       alert(data.errors ? data.errors.map(e => e.message).join(', ') : 'Er is een fout opgetreden.');
                     });
-                    submitBtn.textContent = 'Verstuur en ontvang rapport';
+                    submitBtn.textContent = 'Verstuur en Ontvang Rapport';
                     submitBtn.disabled = false;
                 }
             }).catch(error => {
-                alert('Er is een fout opgetreden bij het verzenden. Controleer uw internetverbinding.');
-                submitBtn.textContent = 'Verstuur en ontvang rapport';
+                alert('Verzendfout. Controleer uw internetverbinding.');
+                submitBtn.textContent = 'Verstuur en Ontvang Rapport';
                 submitBtn.disabled = false;
             });
         });
-
-        updateFormSteps();
+        updateFormSteps(); // Initialiseer de formulierstatus
     });
     </script>
 </body>

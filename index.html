@@ -32,6 +32,7 @@
         
         .form-step {
             transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            width: 100%;
         }
         .form-step.hidden {
             opacity: 0;
@@ -39,9 +40,10 @@
             position: absolute;
             pointer-events: none;
         }
+        /* AANPASSING: Transition voor hoogte toegevoegd voor soepele animatie */
         #form-content {
             position: relative;
-            min-height: 220px;
+            transition: height 0.3s ease-in-out;
         }
 
         .card-hover {
@@ -211,16 +213,13 @@
             </div>
         </section>
 
-        <!-- AANPASSING: Nieuwe Proces Sectie -->
         <section id="proces" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center max-w-3xl mx-auto">
                     <h2 class="text-3xl md:text-4xl mb-4">Ons Proces: Transparant en Zonder Verrassingen</h2>
                     <p class="text-base md:text-lg text-subtle leading-relaxed mb-16">Een bedrijfsoverdracht is een grote stap. Wij begeleiden u door een helder en respectvol proces, van de eerste kennismaking tot de definitieve handtekening.</p>
                 </div>
-                <!-- Tijdlijn container -->
                 <div class="relative max-w-5xl mx-auto">
-                    <!-- De verticale lijn -->
                     <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-gray-200" style="transform: translateX(-1px);"></div>
                     <div class="space-y-16">
                         <!-- Stap 1 -->
@@ -234,7 +233,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-4 md:mt-0">
-                                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop" class="rounded-lg shadow-xl w-full" alt="Vrijblijvende kennismaking">
+                                    <img src="foto1.png" class="rounded-lg shadow-xl w-full" alt="Vrijblijvende kennismaking">
                                 </div>
                             </div>
                             <div class="absolute top-1/2 -left-0.5 md:left-1/2 w-4 h-4 rounded-full bg-brand-green border-4 border-white" style="transform: translate(-50%, -50%);"></div>
@@ -250,7 +249,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-4 md:mt-0 md:order-1">
-                                    <img src="https://images.unsplash.com/photo-1556742044-53c8d5d1e1da?q=80&w=2070&auto=format&fit=crop" class="rounded-lg shadow-xl w-full" alt="Gezamenlijke analyse">
+                                    <img src="foto2.png" class="rounded-lg shadow-xl w-full" alt="Gezamenlijke analyse">
                                 </div>
                             </div>
                             <div class="absolute top-1/2 -left-0.5 md:left-1/2 w-4 h-4 rounded-full bg-brand-green border-4 border-white" style="transform: translate(-50%, -50%);"></div>
@@ -266,7 +265,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-4 md:mt-0">
-                                    <img src="https://images.unsplash.com/photo-1586473215904-19358a9937b8?q=80&w=2070&auto=format&fit=crop" class="rounded-lg shadow-xl w-full" alt="Eerlijk en helder voorstel">
+                                    <img src="foto3.png" class="rounded-lg shadow-xl w-full" alt="Eerlijk en helder voorstel">
                                 </div>
                             </div>
                             <div class="absolute top-1/2 -left-0.5 md:left-1/2 w-4 h-4 rounded-full bg-brand-green border-4 border-white" style="transform: translate(-50%, -50%);"></div>
@@ -282,7 +281,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-4 md:mt-0 md:order-1">
-                                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" class="rounded-lg shadow-xl w-full" alt="'Warme' overdracht">
+                                    <img src="foto4.png" class="rounded-lg shadow-xl w-full" alt="'Warme' overdracht">
                                 </div>
                             </div>
                             <div class="absolute top-1/2 -left-0.5 md:left-1/2 w-4 h-4 rounded-full bg-brand-green border-4 border-white" style="transform: translate(-50%, -50%);"></div>
@@ -303,13 +302,13 @@
                         <img src="martijn.jpg" alt="Foto van Martijn de Blaey" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg object-cover">
                         <h3 class="text-2xl font-bold">Martijn de Blaey</h3>
                         <p class="font-semibold brand-green mb-2">Commercie & Strategie</p>
-                        <p class="text-subtle leading-relaxed">Martijn leidt de commerciële strategie en zorgt voor financiële scherpte. Hij focust op het verhogen van de winstgevendheid per project en het uitbouwen van een voorspelbare, contractuele omzetstroom.</p>
+                        <p class="text-subtle leading-relaxed">Martijn implementeert het **Commercie & Strategie Playbook**, gericht op het verhogen van de winstgevendheid per project en het bouwen van een voorspelbare, contractuele omzetstroom.</p>
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-xl text-center card-hover">
                         <img src="ebel.jpg" alt="Foto van Ebel Weelinck" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg object-cover">
                         <h3 class="text-2xl font-bold">Ebel Weelinck</h3>
                         <p class="font-semibold brand-green mb-2">Data & Technologie</p>
-                        <p class="text-subtle leading-relaxed">Ebel is verantwoordelijk voor de digitale transformatie en operationele efficiëntie. Zijn focus ligt op het digitaliseren van processen om de efficiëntie te verhogen en het bedrijf schaalbaar te maken voor de toekomst.</p>
+                        <p class="text-subtle leading-relaxed">Ebel implementeert het **Data & Technologie Playbook**, waarmee hij operationele processen digitaliseert, de efficiëntie verhoogt en een schaalbaar bedrijf bouwt voor de toekomst.</p>
                     </div>
                 </div>
             </div>
@@ -373,6 +372,7 @@
             const form = document.getElementById('conversational-form');
             if (!form) return;
             
+            const formContent = document.getElementById('form-content');
             const steps = Array.from(form.querySelectorAll('.form-step'));
             const nextBtn = document.getElementById('next-btn');
             const prevBtn = document.getElementById('prev-btn');
@@ -383,12 +383,22 @@
 
             let currentStep = 0;
 
+            function setFormHeight() {
+                const currentStepElement = steps[currentStep];
+                if (currentStepElement) {
+                    formContent.style.height = `${currentStepElement.offsetHeight}px`;
+                }
+            }
+
             function updateFormSteps() {
                 const progress = (currentStep / (steps.length - 1)) * 100;
                 progressBar.style.width = `${progress}%`;
                 steps.forEach((step, index) => {
                     step.classList.toggle('hidden', index !== currentStep);
                 });
+                
+                setFormHeight();
+
                 prevBtn.classList.toggle('hidden', currentStep === 0);
                 nextBtn.classList.toggle('hidden', currentStep === steps.length - 1);
                 submitBtn.classList.toggle('hidden', currentStep !== steps.length - 1);
@@ -416,6 +426,19 @@
                 if (currentStep > 0) {
                     currentStep--;
                     updateFormSteps();
+                }
+            });
+
+            form.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    // Prevent default form submission on Enter
+                    e.preventDefault();
+                    // Trigger click on the visible button
+                    if(!nextBtn.classList.contains('hidden')){
+                        nextBtn.click();
+                    } else if (!submitBtn.classList.contains('hidden')) {
+                        submitBtn.click();
+                    }
                 }
             });
             
@@ -454,8 +477,11 @@
                     submitBtn.disabled = false;
                 });
             });
-
+            
+            // Initial call to set height and show first step
             updateFormSteps();
+             // Recalculate height on window resize
+            window.addEventListener('resize', setFormHeight);
         });
     </script>
 </body>

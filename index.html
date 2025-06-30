@@ -98,7 +98,7 @@
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-white">De Toekomst van uw Hoveniersbedrijf</h1>
                 <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">Of u nu groei, bedrijfsopvolging of verkoop overweegt: navigeer de uitdagingen van de markt en ontsluit de ware potentie en waarde van uw hoveniersbedrijf.</p>
                 <a href="#download-rapport" class="inline-block bg-accent text-white font-bold py-3 px-5 text-base sm:py-3 sm:px-8 sm:text-lg md:py-4 md:px-10 rounded-lg hover:bg-accent-dark transition-colors shadow-2xl">
-                    Start hier: Ontvang uw Benchmark Rapport
+                    Start hier: Ontvang ons Onderzoeksrapport
                 </a>
             </div>
         </section>
@@ -153,31 +153,55 @@
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-center">
                     <div class="pr-0 lg:pr-8">
-                        <h2 class="text-3xl md:text-4xl mb-4">Krijg Toegang tot Exclusieve Branche-Data.</h2>
-                        <p class="text-base md:text-lg text-subtle mb-6 leading-relaxed">Weet waar u staat als hovenier. Vergelijk uw bedrijf met de rest van de sector met ons exclusieve benchmarkrapport. Ontdek direct de gemiddelde marges, kostenstructuren en omzet per FTE. Krijg daarnaast een unieke kijk op de hovenier van de toekomst. Een essentiële tool voor de ambitieuze ondernemer. Vul het formulier in en ontvang direct toegang.</p>
+                        <h2 class="text-3xl md:text-4xl mb-4">Krijg Toegang tot ons Onderzoeksrapport</h2>
+                        <p class="text-base md:text-lg text-subtle mb-6 leading-relaxed">Weet waar u staat als hovenier. Vergelijk uw bedrijf met de rest van de sector met ons exclusieve onderzoeksrapport over de hoveniersbranche. Ontdek direct de gemiddelde marges, kostenstructuren en omzet per FTE. Krijg daarnaast een unieke kijk op de hovenier van de toekomst. Een essentieel rapport om de juiste strategische keuzes te maken. Vul het formulier in en ontvang direct toegang.</p>
                     </div>
                     <div class="bg-white rounded-xl shadow-xl border border-gray-200 p-6 sm:p-8 overflow-hidden">
                         <div id="form-container">
                             <div class="w-full bg-gray-200 rounded-full h-2 mb-8">
                                 <div id="progress-bar" class="bg-accent h-2 rounded-full" style="width: 0%; transition: width 0.4s ease-in-out;"></div>
                             </div>
-                            <form id="conversational-form" action="https://formspree.io/f/your_unique_id" method="POST">
+                            <!-- AANPASSINGEN IN FORMULIER STARTEN HIER -->
+                            <form id="conversational-form" action="https://formspree.io/f/xzzgkwgn" method="POST">
                                 <div id="form-content">
+                                    <!-- Stap 0: E-mail -->
                                     <div class="form-step" data-step="0">
-                                        <label for="email" class="block text-lg sm:text-xl font-semibold text-gray-800">Op welk e-mailadres mogen we het rapport sturen?</label>
+                                        <label for="email" class="block text-lg sm:text-xl font-semibold text-gray-800">Laten we beginnen! Op welk e-mailadres wilt u het rapport ontvangen?</label>
                                         <input type="email" name="email" id="email" required placeholder="uw.email@voorbeeld.nl" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
                                     </div>
+                                    <!-- Stap 1: FTE -->
                                     <div class="form-step hidden" data-step="1">
-                                        <label for="fte" class="block text-lg sm:text-xl font-semibold text-gray-800">Hoeveel FTE telt uw team (incl. uzelf)?</label>
-                                        <select id="fte" name="FTE" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                        <label for="fte" class="block text-lg sm:text-xl font-semibold text-gray-800">Hoeveel FTE telt uw team (inclusief uzelf)?</label>
+                                        <select id="fte" name="Aantal FTE" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
                                             <option>1 - 3 FTE (Vooral zelfstandig)</option>
                                             <option>4 - 10 FTE (Groeiend team)</option>
                                             <option>11 - 20 FTE (Gevestigd MKB)</option>
                                             <option>&gt; 20 FTE (Grote speler)</option>
                                         </select>
                                     </div>
+                                    <!-- Stap 2: Omzetbron -->
                                     <div class="form-step hidden" data-step="2">
-                                        <label for="uitdaging" class="block text-lg sm:text-xl font-semibold text-gray-800">Wat is uw grootste zakelijke uitdaging?</label>
+                                        <label for="omzet-bron" class="block text-lg sm:text-xl font-semibold text-gray-800">Wie is uw voornaamste klantengroep?</label>
+                                        <select id="omzet-bron" name="Omzetbron" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                            <option>Commercieel</option>
+                                            <option>Particulier</option>
+                                            <option>Publieke sector</option>
+                                        </select>
+                                    </div>
+                                    <!-- Stap 3: Omzetniveau -->
+                                    <div class="form-step hidden" data-step="3">
+                                        <label for="omzet-niveau" class="block text-lg sm:text-xl font-semibold text-gray-800">Wat is uw geschatte jaaromzet?</label>
+                                        <select id="omzet-niveau" name="Omzetniveau" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                            <option>€0 - €500.000</option>
+                                            <option>€500.000 - €1 miljoen</option>
+                                            <option>€1 - €3 miljoen</option>
+                                            <option>€3 - €10 miljoen</option>
+                                            <option>Meer dan €10 miljoen</option>
+                                        </select>
+                                    </div>
+                                    <!-- Stap 4: Uitdaging -->
+                                    <div class="form-step hidden" data-step="4">
+                                        <label for="uitdaging" class="block text-lg sm:text-xl font-semibold text-gray-800">Wat is momenteel uw grootste zakelijke uitdaging?</label>
                                         <select id="uitdaging" name="Grootste Uitdaging" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
                                             <option>Winstgevendheid en grip op cijfers</option>
                                             <option>Vinden en behouden van goed personeel</option>
@@ -186,14 +210,23 @@
                                             <option>Anders</option>
                                         </select>
                                     </div>
-                                    <div class="form-step hidden" data-step="3">
-                                        <label for="timing" class="block text-lg sm:text-xl font-semibold text-gray-800">Binnen welke termijn overweegt u een serieuze verandering?</label>
+                                    <!-- Stap 5: Timing -->
+                                    <div class="form-step hidden" data-step="5">
+                                        <label for="timing" class="block text-lg sm:text-xl font-semibold text-gray-800">Wat is uw focus voor de komende jaren?</label>
                                         <select id="timing" name="Timing Verandering" class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
-                                            <option>Binnen 1-2 jaar (actueel)</option>
-                                            <option>Binnen 3-5 jaar (oriënterend)</option>
-                                            <option>Nog niet concreet, maar ik sta er voor open</option>
-                                            <option>Ik focus op autonome groei</option>
+                                            <option>Focus op autonome groei van mijn bedrijf</option>
+                                            <option>Actief groeien door een ander bedrijf over te nemen</option>
+                                            <option>Oriënteren op verkoop/overdracht binnen 3-5 jaar</option>
+                                            <option>Een verkoop of overdracht realiseren binnen 1-2 jaar</option>
+                                            <option>De opties openhouden voor de toekomst</option>
                                         </select>
+                                    </div>
+                                    <!-- NIEUW Stap 6: Open vraag en telefoonnummer -->
+                                    <div class="form-step hidden" data-step="6">
+                                        <label for="opmerkingen" class="block text-lg sm:text-xl font-semibold text-gray-800">Bijna klaar! Heeft u een specifieke vraag of opmerking voor ons?</label>
+                                        <textarea id="opmerkingen" name="Opmerkingen" rows="3" placeholder="Typ hier uw bericht..." class="mt-4 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"></textarea>
+                                        <label for="telefoon" class="block text-base font-medium text-gray-600 mt-4">Telefoonnummer (optioneel, voor direct contact)</label>
+                                        <input type="tel" name="telefoon" id="telefoon" placeholder="06 123 456 78" class="mt-2 block w-full text-base sm:text-lg px-3 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
                                     </div>
                                 </div>
                                 <div class="mt-8 pt-5 border-t border-gray-200 flex justify-between items-center">
@@ -202,11 +235,16 @@
                                     <button type="submit" id="submit-btn" class="bg-brand-green text-white font-bold py-2 px-6 rounded-lg hover:bg-brand-green-dark transition-colors text-lg shadow hidden">Verstuur en ontvang rapport</button>
                                 </div>
                             </form>
+                            <!-- AANPASSINGEN IN FORMULIER EINDIGEN HIER -->
                         </div>
+<!-- AANGEPAST SUCCESBERICHT MET DOWNLOADKNOP -->
                         <div id="success-message" class="hidden text-center py-10">
                             <svg class="w-16 h-16 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <h3 class="text-2xl font-bold mb-2">Dank u wel!</h3>
-                            <p class="text-subtle">Het rapport is onderweg naar uw inbox. We nemen mogelijk contact op om te horen of het waardevol was.</p>
+                            <h3 class="text-2xl font-bold mb-2">Dank u wel voor uw interesse!</h3>
+                            <p class="text-subtle mb-6">Uw aanvraag is succesvol verzonden. U kunt het rapport hier direct downloaden:</p>
+                            <a href="https://drive.google.com/file/d/1JMsG75uYejl99SNjlSQp3x5l6Mu7igmD/view?usp=sharing" target="_blank" class="inline-block bg-brand-green text-white font-bold py-3 px-8 rounded-lg hover:bg-brand-green-dark transition-colors text-lg shadow">
+                                Download het Rapport nu
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -301,14 +339,14 @@
                     <div class="bg-white p-8 rounded-lg shadow-xl text-center card-hover">
                         <img src="martijn.jpg" alt="Foto van Martijn de Blaey" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg object-cover">
                         <h3 class="text-2xl font-bold">Martijn de Blaey</h3>
-                        <p class="font-semibold brand-green mb-2">Commercie & Strategie</p>
-                        <p class="text-subtle leading-relaxed">Martijn implementeert het **Commercie & Strategie Playbook**, gericht op het verhogen van de winstgevendheid per project en het bouwen van een voorspelbare, contractuele omzetstroom.</p>
+                        <p class="font-semibold brand-green mb-2">Strategie & Commercie</p>
+                        <p class="text-subtle leading-relaxed">Met mijn achtergrond in private equity breng ik een scherpe financiële en strategische blik. Ik focus op de commerciële waardecreatie: het verhogen van de winstgevendheid en het bouwen aan een solide toekomst.</p>
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-xl text-center card-hover">
                         <img src="ebel.jpg" alt="Foto van Ebel Weelinck" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg object-cover">
                         <h3 class="text-2xl font-bold">Ebel Weelinck</h3>
                         <p class="font-semibold brand-green mb-2">Data & Technologie</p>
-                        <p class="text-subtle leading-relaxed">Ebel implementeert het **Data & Technologie Playbook**, waarmee hij operationele processen digitaliseert, de efficiëntie verhoogt en een schaalbaar bedrijf bouwt voor de toekomst.</p>
+                        <p class="text-subtle leading-relaxed">Ik zorg voor de modernisering van de operatie. Door een data-gedreven aanpak en de slimme inzet van AI waar mogelijk, verhogen we de efficiëntie en maken we het bedrijf klaar voor de volgende generatie.</p>
                     </div>
                 </div>
             </div>
